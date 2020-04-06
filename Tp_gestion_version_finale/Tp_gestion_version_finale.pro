@@ -9,6 +9,7 @@ SOURCES += \
         student.cpp
 
 HEADERS += \
+    choice.h \
     presentation.h \
     promo.h \
     student.h
