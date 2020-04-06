@@ -18,7 +18,7 @@ int main()
     startup();
 
 
-    choice();
+    mode();
 
 
     end();

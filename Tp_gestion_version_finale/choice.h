@@ -9,8 +9,8 @@ using namespace std;
 #include "student.h"
 #include "promo.h"
 
-
-void choice(){
+void choice1()
+{
     int choix;
     cout << "Choisissez la promo B1 ou B2 ";
     cout << "\nSaisissez 1 ou 2 : ";
@@ -90,10 +90,31 @@ void choice(){
        b2.showMoyenne();
         }
 
+}
+void choice2(){
+    int tapez;
+    cout << "En fait j'ai la flemme de le faire pour l'instant, je le ferais plus tard... " << endl;
+    cout << "Tapez 1 pour basculer sur le premier mode : ";
+    cin >> tapez;
 
+    if(tapez == 1){
+        choice1();
+    }
+}
 
+void mode()
+{
+   int choisir;
+   cout << "Mode 1 pour ajouter vos propres eleves.\nMode 2 pour les eleves deja enregistres." << endl;
+   cout << "Selectionnez le mode :" ;
+   cin >> choisir;
 
-
+  if(choisir == 1){
+      choice1();
+  }
+  if(choisir == 2){
+      choice2();
+  }
 }
 
 
