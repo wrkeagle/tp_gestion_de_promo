@@ -17,7 +17,7 @@ void startup()
     cout << "|   " << setw(3) << "Bienvenue dans" << "   |" << endl;
     cout << "|   " << setw(3) << "le gestionnaire" <<"  |" << endl;
     cout << "|   " << setw(3) << "de promotions" << "    |" << endl;
-    cout << "|" << "        v3.0        " << setw(10) << "|" << endl;
+    cout << "|" << "        v3.2        " << setw(10) << "|" << endl;
     cout << "|" << "                    |" << endl;
     cout << "|" <<  "____________________|\n" << endl;
 

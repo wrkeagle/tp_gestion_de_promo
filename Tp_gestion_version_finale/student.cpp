@@ -50,7 +50,7 @@ int student::addGrade()
 
     if (grade > 20)
     {
-        cout << "Impossible, la note que vous tentez d'entrer est superieure a 20.\n Entrez une note comprise entre 0 et 20 inclus." << endl;
+        cout << "Impossible, la note que vous tentez d'entrer est superieure a 20.\nEntrez une note comprise entre 0 et 20 inclus." << endl;
 
         addGrade();
 
@@ -58,7 +58,7 @@ int student::addGrade()
     }
     if(grade < 0)
     {
-        cout << "Impossible, la note que vous tentez d'entrer est inferieure a 0.\n Entrez une note comprise entre 0 et 20 inclus." << endl;
+        cout << "Impossible, la note que vous tentez d'entrer est inferieure a 0.\nEntrez une note comprise entre 0 et 20 inclus." << endl;
 
         addGrade();
 
@@ -81,6 +81,7 @@ void student::calcMoyenne()
         moyenne = moyenne / grade_list.size();
 
         cout << "La moyenne de l'eleve est de " << moyenne << "/20." << endl;
+
 
 }
 

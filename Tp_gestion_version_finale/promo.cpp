@@ -23,11 +23,11 @@ void promo::addStudent(const student &eleve)
 
 void promo::addMoyenne(float moyenne)
 {
-    cout << moyenne << endl;
+    //cout << moyenne << endl;
+    cout << "Calcul de la moyenne de la promo..." << endl;
 
     moyenne_list.push_back(moyenne);
 
-    cout << "Moyenne d'une valeur de " << setprecision(3) << moyenne << "/20 a ete ajoutee pour l'eleve." << endl;
 }
 
 void promo::showMoyenne()
@@ -37,7 +37,6 @@ void promo::showMoyenne()
     for(int i = 0; i<moyenne_list.size(); ++i)
     {
         moyenne_promo = moyenne_promo + moyenne_list[i];
-        cout << setprecision(3) << "La note " << i+1 << " est de " << setprecision(3) << moyenne_list[i] << "/20." << endl;
     }
 
     moyenne_promo = moyenne_promo / moyenne_list.size();

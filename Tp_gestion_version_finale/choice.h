@@ -9,9 +9,11 @@ using namespace std;
 #include "student.h"
 #include "promo.h"
 
+
 void choice(){
     int choix;
-    cout << "Choisissez une classe b1(1) ou b2(2) : ";
+    cout << "Choisissez la promo B1 ou B2 ";
+    cout << "\nSaisissez 1 ou 2 : ";
     cin >> choix;
 
 
@@ -42,7 +44,6 @@ void choice(){
     eleve3.addGrade();
     eleve3.calcMoyenne();
 
-    cout << "\n\n\n" << endl;
 
     b1.addStudent(eleve1);
     b1.addStudent(eleve2);
@@ -51,10 +52,9 @@ void choice(){
     b1.addMoyenne(eleve2.getMoyenne());
 
     b1.showMoyenne();
+    }
 
-
-   }
-   if(choix == 2){
+    if(choix == 2){
        promo b2 ("Deuxieme annee");
 
        student eleve1;
@@ -80,7 +80,6 @@ void choice(){
        eleve3.addGrade();
        eleve3.calcMoyenne();
 
-       cout << "\n\n\n\n" << endl;
 
        b2.addStudent(eleve1);
        b2.addStudent(eleve2);
@@ -89,17 +88,12 @@ void choice(){
        b2.addMoyenne(eleve2.getMoyenne());
 
        b2.showMoyenne();
+        }
 
 
 
 
 
-   }
-   else {
-       cout << "Veuillez choisir 1 ou 2 s'il vous plait." << endl;
-       choice();
-
-}
 }
 
 
